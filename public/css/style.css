@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;700&display=swap');
+
+.header {
+    width: 100%;
+    height: 46.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    background-color: #20183b;
+    background-image: url(/img/header_bg.png);
+    background-size: 100vw 42rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 1.2rem 3rem;
+}
+
+.header__logo {
+    width: 11%;
+    height: 1.6rem;
+}
+
+.header__list {
+    width: 45%;
+    height: 24rem;
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #20183b;
+    opacity: 0.6;
+    padding: 3rem 5rem 5rem 0;
+}
+
+.list__item {
+    font-family: 'Turret Road', cursive;
+    color: #ffffff;
+    opacity: 1;
+    font-size: 1.4rem;
+}
+
+.header__register {
+    width: 30%;
+    position: absolute;
+    text-align: left;
+    top: 2.2rem;
+    right: 2rem;
+    background-color: #ffffff;
+    border: 0.5rem solid #cccccc;
+    padding: 0.4rem;
+}
+
+.register__item {
+    font-family: 'Turret Road', cursive;
+    color: #cccccc;
+    opacity: 1;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.register__input {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.register__input--submit {
+    border: none;
+    background-color: #20183b;
+    font-family: 'Turret Road', cursive;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.section {
+    width: 100%;
+    margin-top: -1.3rem;
+    background-color: #B5B5B5;
+    text-align: center;
+    padding: 2rem 30rem;
+    
+}
+
+.section__title {
+    font-family: 'Turret Road', cursive;
+    color: #4F4F4F;
+    font-size: 1.8rem;
+}
+
+.section__content {
+    text-align: justify;
+    font-family: 'Turret Road', cursive;
+    color: #4F4F4F;
+    font-size: 1.4rem;
+}
