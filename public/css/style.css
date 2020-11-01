@@ -166,6 +166,7 @@
 .box__content {
     width: 100%;
     font-family: 'Turret Road', cursive;
+    text-align: justify;
     color: #2b165c;
     padding: 0.5rem 1rem;
     font-size: 1rem;
