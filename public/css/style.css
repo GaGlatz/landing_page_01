@@ -2,30 +2,31 @@
 
 .header {
     width: 100%;
-    height: 36rem;
+    height: 60rem;
     position: relative;
     top: 0;
     left: 0;
     display: block;
+    text-align: left;
     box-sizing: border-box;
     background-color: #20183b;
     background-image: url(/img/header_bg.png);
-    background-size: 100% 33rem;
+    background-size: 100% 56rem;
     background-position: bottom;
     background-repeat: no-repeat;
-    padding: 0.8rem 3rem;
+    padding: 1rem 3rem;
 }
 
 .header__logo {
-    width: 11%;
-    height: 1.4rem;
+    width: 12rem;
+    height: 1.6rem;
 }
 
 .header__list {
     width: 45%;
-    height: 19rem;
+    height: 22rem;
     position: relative;
-    top: 7rem;
+    top: 17rem;
     left: 3rem;
     box-sizing: border-box;
     background-color: #20183b;
@@ -37,15 +38,15 @@
     font-family: 'Turret Road', cursive;
     color: #ffffff;
     opacity: 1;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .header__register {
+    box-sizing: border-box;
     width: 30%;
-    height: 36rem;
     position: absolute;
     text-align: left;
-    top: 1.5rem;
+    top: 3rem;
     right: 1%;
     background-color: #ffffff;
     border: 0.5rem solid #cccccc;
@@ -57,13 +58,13 @@
     font-family: 'Turret Road', cursive;
     color: #cccccc;
     opacity: 1;
-    font-size: 1rem;
-    margin-bottom: 2.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 5.5rem;
 }
 
 .register__input {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
 }
 
 .register__input--submit {
@@ -71,7 +72,7 @@
     background-color: #20183b;
     font-family: 'Turret Road', cursive;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -79,9 +80,9 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 20rem;
     background-color: #B5B5B5;
     padding: 1rem;
+    padding-bottom: 5rem;
     display: block;
     text-align: center;
     z-index: -1;
@@ -103,19 +104,19 @@
     box-sizing: border-box;
     font-family: 'Turret Road', cursive;
     color: #4F4F4F;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .introduction__content {
-    width: 60%;
+    width: 65%;
     position: relative;
-    left: 20%;
+    left: 17.5%;
     box-sizing: border-box;
     text-align: justify;
     font-family: 'Turret Road', cursive;
     color: #4F4F4F;
     margin-bottom: 3rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .advice {
@@ -130,7 +131,7 @@
     box-sizing: border-box;
     font-family: 'Turret Road', cursive;
     color: #2b165c;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -138,49 +139,110 @@
     box-sizing: border-box;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     grid-gap: 2rem;
     padding: 1rem;
     margin-top: 5rem;
 }
 
 .advice__box {
-    height: 20rem;
     padding: 3rem;
     overflow: hidden;
 }
 
 .box__image {
     width: 15%;
-    height: 3rem;
+    height: 4rem;
 }
 
 .box__title {
     width: 100%;
+    display: inline-block;
     font-family: 'Turret Road', cursive;
     font-weight: bold;
     color: #2b165c;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .box__content {
-    width: 100%;
+    width: 70%;
+    display: inline-block;
     font-family: 'Turret Road', cursive;
     text-align: justify;
     color: #2b165c;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .footer {
     box-sizing: border-box;
     width: 100%;
-    height: 12rem;
+    height: 15rem;
     border-top: 0.2rem solid #B5B5B5;
     text-align: center;
     padding: 1rem;
     font-family: 'Turret Road', cursive;
     color: #cccccc;
     opacity: 1;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+        align-items: center;
+    }
+
+    .header__list {
+        width: 70%;
+        overflow: visible;
+        text-align: left;
+        top: 2rem;
+        left: 0;
+        margin: auto;
+    }
+
+    .header__register {
+        width: 70%;
+        position: relative;
+        top: 3rem;
+        left: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .register__item {
+        margin-bottom: 1rem;
+    }
+
+    .register__input {
+        height: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header__list {
+        width: 100%;
+    }
+
+    .header__register {
+        width: 100%;
+    }
+
+    .introduction::after {
+        bottom: -2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        height: 78rem;
+        background-size: 100% 74rem;
+    }
+
+    .header__list {
+        height: auto;
+    }
 }
